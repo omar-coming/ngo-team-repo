@@ -4,16 +4,15 @@ import router from './routes/index.js';
 const app = express();
 const port = process.env.PORT || 3000;
 
+// these are our main routes
 app.use('/', router);
 
-// use catch all if they dont match
-app.use(function(req,res) {
-    //route doesnt match, put a 404 here
-    console.log('route doesnt exist');
+// use this route for anything that doesn't match
+app.use(function(req, res) {
+    // route doesn't match, probably a 404 or something
+    console.log('page does not exist');
 })
 
-
-app.listen(port,()=>{
-    console.log(`server running on port ${port}/`);
+app.listen(port, () => {
+    console.log(`Server running at port: ${port}/`);
 });
-
