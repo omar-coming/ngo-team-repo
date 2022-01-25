@@ -1,0 +1,17 @@
+{
+  "name": "vanrys_t_ngo_teambuild",
+  "version": "1.0.0",
+  "description": "my first node app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
